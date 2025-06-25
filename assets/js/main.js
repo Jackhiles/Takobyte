@@ -111,16 +111,17 @@
   }
 
   /**
-   * Mobile nav toggle
+   * Mobile nav toggle (no Bootstrap)
    */
   on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+    let navUl = select('#navbar ul');
+    navUl.classList.toggle('navbar-mobile');
+    this.classList.toggle('bi-list');
+    this.classList.toggle('bi-x');
+  });
 
   /**
-   * Mobile nav dropdowns activate
+   * Mobile nav dropdowns activate (not needed if no dropdowns)
    */
   on('click', '.navbar .dropdown > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
