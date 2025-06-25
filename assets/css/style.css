@@ -357,98 +357,96 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 90px;
-  right: 0;
+  /* Remove absolute positioning for flex centering */
+  position: static;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
   padding: 0 15px;
+  background: none;
 }
 
-@media (max-width: 991px) {
-  #hero .hero-container {
-    top: 70px;
-  }
+.profile-card {
+  background: rgba(255,255,255,0.97);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 40px 32px 32px 32px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  margin: 32px 0;
 }
 
-#hero h1 {
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-size: 56px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-#hero h1 span {
-  color: #97C6F0;
-}
-
-@media (max-width: 991px) {
-  #hero h1 {
-    font-size: 34px;
-  }
-}
-
-#hero p {
-  color: #ebebeb;
+.hero-title {
+  font-size: 2.2rem;
   font-weight: 700;
-  font-size: 20px;
+  color: #0e1b4d;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
-@media (max-width: 991px) {
-  #hero p {
-    font-size: 16px;
-  }
+.hero-desc {
+  color: #444;
+  font-size: 1.08rem;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+.profile-section {
+  margin-bottom: 28px;
+}
+
+.profile-section-title {
+  font-size: 1.1rem;
+  color: #29E4A0;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.profile-btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
 }
 
 #hero .about-btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
-  color: #fff;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+  min-width: 120px;
+  margin: 0 0 0 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1rem;
+  padding: 10px 0;
+  border-radius: 8px;
   border: 2px solid #29E4A0;
+  background: #29E4A0;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(41,228,160,0.08);
 }
 
 #hero .about-btn:hover {
-  background: #29E4A0;
-  color: #fff;
+  background: #fff;
+  color: #29E4A0;
+  border-color: #29E4A0;
 }
 
-@-webkit-keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 24px 8px 20px 8px;
+    max-width: 98vw;
   }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
+  .profile-btn-row {
+    flex-direction: column;
+    gap: 12px;
   }
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
+  #hero .about-btn {
+    width: 100%;
+    min-width: unset;
   }
 }
 
