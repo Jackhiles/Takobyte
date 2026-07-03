@@ -254,6 +254,24 @@ img { max-width: 100%; }
   margin-top: 1rem;
 }
 
+/* ── Tag list (Tools I Use) ── */
+.tag-list {
+  list-style: none;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-list li {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+}
+
 /* ── Homelab services ── */
 .service-list {
   display: flex;
