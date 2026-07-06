@@ -272,33 +272,23 @@ img { max-width: 100%; }
   border-radius: 20px;
 }
 
-/* ── Homelab services ── */
-.service-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  margin-top: 1.5rem;
+/* ── Homelab ── */
+.homelab-figure {
+  margin: 1.5rem 0;
 }
 
-.service-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+.homelab-figure img {
+  max-width: 100%;
+  height: auto;
   border-radius: var(--radius);
-  padding: 1.25rem 1.5rem;
-  flex: 1 1 220px;
-  max-width: 320px;
-}
-
-.service-card strong {
   display: block;
-  color: var(--text);
-  font-size: 1rem;
-  margin-bottom: 0.35rem;
+  border: 1px solid var(--border);
 }
 
-.service-card p {
+.homelab-figure figcaption {
   color: var(--text-muted);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
 /* ── Accounts page ── */
