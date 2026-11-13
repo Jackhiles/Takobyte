@@ -13,7 +13,6 @@ can be found.
 - `index.html` — Home, About, Games, and Homelab sections
 - `tako.html` — Public gaming and anime/visual novel accounts
 - `stickyships.html` — Sticky Ships game page with screenshots
-- `ucnmaker.html` — UCN Maker game page with features and screenshots
 - `privacy.html` — Privacy policy
 
 ## Features
