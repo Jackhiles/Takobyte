@@ -452,6 +452,7 @@ img { max-width: 100%; }
 .badge-tested  { background: rgba(46, 160, 67, 0.15);  color: #56d364; border-color: rgba(46, 160, 67, 0.4); }
 .badge-runs    { background: rgba(139, 92, 246, 0.15); color: #b69cff; border-color: rgba(139, 92, 246, 0.4); }
 .badge-partial { background: rgba(210, 153, 34, 0.15); color: #e3b341; border-color: rgba(210, 153, 34, 0.4); }
+.badge-no      { background: rgba(248, 81, 73, 0.12); color: #ff7b72; border-color: rgba(248, 81, 73, 0.4); }
 
 .compat-legend p { color: var(--text-muted); margin-bottom: 0.6rem; }
 .compat-legend .badge { margin-right: 0.5rem; min-width: 4.8rem; text-align: center; }

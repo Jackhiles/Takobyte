@@ -12,7 +12,7 @@
   <meta name="theme-color" content="#8b5cf6">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-  <link rel="stylesheet" href="assets/css/style.css?v=3.3">
+  <link rel="stylesheet" href="assets/css/style.css?v=3.4">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -53,7 +53,8 @@
       <div class="compat-legend">
         <p><span class="badge badge-tested">Tested</span> Played or put through automated play tests (real input, checked results), and every screen runs with nothing unsupported.</p>
         <p><span class="badge badge-runs">Runs</span> Starts and every screen runs with nothing unsupported, but hasn't been played through yet.</p>
-        <p><span class="badge badge-partial">Partial</span> Runs, but uses something Rekindle doesn't support yet. The notes say what.</p>
+        <p><span class="badge badge-partial">Partial</span> Runs, but uses something Rekindle doesn't support yet, or has known problems. The notes say what.</p>
+        <p><span class="badge badge-no">Not possible</span> The game can't run on any Fusion runtime (for example a native port).</p>
       </div>
       <p class="section-text">
         Every game below was loaded and had each of its screens run by Rekindle's compatibility sweep.
@@ -72,17 +73,17 @@
             <tr><th>Game</th><th>Status</th><th>Notes</th></tr>
           </thead>
           <tbody>
-            <tr><td>The Desolate Hope</td><td><span class="badge badge-tested">Tested</span></td><td>Played. New game, loading saves from the original runtime, and the loading screens tested. Runs on the Steam Deck.</td></tr>
-            <tr><td>The Desolate Room</td><td><span class="badge badge-tested">Tested</span></td><td>Played. Title screen, walking and the pixel land section tested.</td></tr>
+            <tr><td>The Desolate Hope</td><td><span class="badge badge-tested">Tested</span></td><td>Played. New game, loading saves from the original runtime, the loading screens and the room transitions in Lun Infinus tested. Runs on the Steam Deck. Known issue: some GUI in the platforming simulations.</td></tr>
+            <tr><td>The Desolate Room</td><td><span class="badge badge-partial">Partial</span></td><td>Played. Title screen and the island work. Pixel land has reported problems with movement, combat and leaving rooms, being worked on.</td></tr>
             <tr><td>Five Nights at Freddy's</td><td><span class="badge badge-tested">Tested</span></td><td>Office controls (doors, lights, cameras) tested.</td></tr>
             <tr><td>Five Nights at Freddy's 2</td><td><span class="badge badge-tested">Tested</span></td><td>Mask and office tested. Runs on the Steam Deck.</td></tr>
             <tr><td>Five Nights at Freddy's 4</td><td><span class="badge badge-tested">Tested</span></td><td>Opening cutscene tested.</td></tr>
-            <tr><td>FNaF World</td><td><span class="badge badge-tested">Tested</span></td><td>Starting a new save file tested.</td></tr>
-            <tr><td>Freddy Fazbear's Pizzeria Simulator</td><td><span class="badge badge-tested">Tested</span></td><td>8-bit title, menu and the first minigame tested.</td></tr>
-            <tr><td>Ultimate Custom Night</td><td><span class="badge badge-tested">Tested</span></td><td>Character select ("add all") and starting a night tested.</td></tr>
+            <tr><td>FNaF World</td><td><span class="badge badge-tested">Tested</span></td><td>Starting a new save file and the opening dialogue tested.</td></tr>
+            <tr><td>Freddy Fazbear's Pizzeria Simulator</td><td><span class="badge badge-tested">Tested</span></td><td>8-bit title, menu, the first minigame, the catalog and blueprint mode tested. Known issue: buttons for a newly placed item can sit partly off screen.</td></tr>
+            <tr><td>Ultimate Custom Night</td><td><span class="badge badge-tested">Tested</span></td><td>Character select ("add all"), the AI arrows and character info on hover, and starting a night tested.</td></tr>
             <tr><td>Five Nights at Freddy's 3</td><td><span class="badge badge-runs">Runs</span></td><td></td></tr>
             <tr><td>Five Nights at Freddy's 4: Halloween Edition</td><td><span class="badge badge-runs">Runs</span></td><td></td></tr>
-            <tr><td>Five Nights at Freddy's: Sister Location</td><td><span class="badge badge-runs">Runs</span></td><td></td></tr>
+            <tr><td>Five Nights at Freddy's: Sister Location</td><td><span class="badge badge-runs">Runs</span></td><td>Looking around with the mouse in the elevator and the main hub checked.</td></tr>
             <tr><td>Hawaiian Jackpots</td><td><span class="badge badge-runs">Runs</span></td><td>Reaches the title screen. A newer Fusion 2.5+ build.</td></tr>
             <tr><td>Jumbo Slots Collection</td><td><span class="badge badge-runs">Runs</span></td><td>PC port.</td></tr>
             <tr><td>Magnum Slots Collection</td><td><span class="badge badge-runs">Runs</span></td><td>PC port.</td></tr>
@@ -94,7 +95,9 @@
             <tr><td>Legacy of Flan 2 Online</td><td><span class="badge badge-partial">Partial</span></td><td>Online multiplayer (Moo2) isn't supported.</td></tr>
             <tr><td>Flannville</td><td><span class="badge badge-partial">Partial</span></td><td>Online multiplayer (Moo2) isn't supported.</td></tr>
             <tr><td>Junkyard Apocalypse</td><td><span class="badge badge-partial">Partial</span></td><td>Online features (Moo2) aren't supported.</td></tr>
+            <tr><td>Shin Megami Tensei: Synchronicity Prologue</td><td><span class="badge badge-partial">Partial</span></td><td>Run <code>data\megaten.exe</code>. Reaches the title, menus and map. Japanese text (embedded fonts, Text Blitter) and the Encryption object aren't supported yet.</td></tr>
             <tr><td>Light From Above</td><td><span class="badge badge-partial">Partial</span></td><td>Online features (Moo2) aren't supported.</td></tr>
+            <tr><td>Baba Is You (Steam)</td><td><span class="badge badge-no">Not possible</span></td><td>Made with Fusion, but the release was converted to native code with Chowdren, so it has no Fusion game data left to run.</td></tr>
           </tbody>
         </table>
       </div>
@@ -146,7 +149,7 @@
       var n = function (c) { return document.querySelectorAll('.compat-table .badge-' + c).length; };
       var total = document.querySelectorAll('.compat-table tbody tr').length;
       document.getElementById('compatCount').textContent =
-        total + ' games: ' + n('tested') + ' tested, ' + n('runs') + ' run, ' + n('partial') + ' partial.';
+        total + ' games: ' + n('tested') + ' tested, ' + n('runs') + ' run, ' + n('partial') + ' partial, ' + n('no') + ' not possible.';
     })();
   </script>
 </body>
