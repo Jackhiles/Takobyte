@@ -45,7 +45,7 @@
         <a href="rekindle-compatibility.html" class="btn btn-outline">Compatibility</a>
         <a href="https://github.com/Jackhiles/Rekindle" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
       </div>
-      <p class="hero-note"><span id="rkVersion">Latest release</span> · Free and open source · Windows, Linux, Steam Deck</p>
+      <p class="hero-note"><span id="rkVersion">Latest release</span> · Free and open source · Windows, Linux, Steam Deck, Android</p>
     </div>
   </section>
 
@@ -56,11 +56,11 @@
         Rekindle is a clean-room runtime for games made with Clickteam Fusion 2.5 and Multimedia Fusion 1.5,
         written from scratch in Rust. It reads a game's own <code>.exe</code> (or its data file) and runs it
         directly, the way ScummVM does for old adventure games, so games that only ever shipped for Windows can
-        run natively on Linux and the Steam Deck, with no Wine or Proton needed.
+        run natively on Linux, the Steam Deck and Android phones, with no Wine or Proton needed.
       </p>
       <p class="section-text">
-        It comes with a launcher that keeps your library, makes desktop and Steam shortcuts, tracks play time and
-        updates itself. Rekindle includes no game files: it plays copies of games you already have.
+        It comes with a launcher that keeps your library, makes desktop and Steam shortcuts, tracks play time,
+        keeps your saves in sync between your devices and updates itself. Rekindle includes no game files: it plays copies of games you already have.
       </p>
       <p class="section-text">
         See the <a href="rekindle-compatibility.html">compatibility list</a> for the games tested so far.
@@ -87,6 +87,14 @@
         <div class="feature-card">
           <h3>Better display</h3>
           <p>Proper fullscreen, upscaling filters including HD for drawn art and a pixel-art smoother, and fit, integer or stretch scaling, all set per game.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Sync between devices</h3>
+          <p>Pair your PC, Steam Deck and phone over your home network with a 6-digit code. Saves then sync on their own, encrypted, with backups of anything replaced, and games can be copied from one device to another.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Android</h3>
+          <p>The full launcher on your phone, with on-screen controls that appear only where a game needs the keyboard (point-and-click screens are played by tapping), and home-screen shortcuts for your games.</p>
         </div>
         <div class="feature-card">
           <h3>Save manager</h3>
@@ -131,6 +139,11 @@
           <h3>Linux</h3>
           <p>An AppImage that runs on most 64-bit distributions. Make it executable (<code>chmod +x</code>) and run it. Prefer a <a class="rk-alt" href="https://github.com/Jackhiles/Rekindle/releases/latest/download/rekindle-linux-x86_64">plain binary</a>?</p>
           <a class="btn" href="https://github.com/Jackhiles/Rekindle/releases/latest/download/Rekindle-x86_64.AppImage">Download for Linux</a>
+        </div>
+        <div class="feature-card rk-dl">
+          <h3>Android</h3>
+          <p>Android 7 or newer, 64-bit ARM (most phones from recent years). Open the download and allow installing from your browser when asked. To update, uninstall the old version first. Get games onto the phone from your PC under Devices and sync.</p>
+          <a class="btn" href="https://github.com/Jackhiles/Rekindle/releases/latest/download/rekindle-android-arm64.apk">Download for Android</a>
         </div>
       </div>
       <p class="fine-print">
