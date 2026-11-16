@@ -411,7 +411,7 @@ img { max-width: 100%; }
   opacity: 0.8;
 }
 
-/* ── Rekindle ── */
+/* ── KlikCore 2 ── */
 .rk-logo {
   display: block;
   width: 128px;
@@ -437,7 +437,7 @@ img { max-width: 100%; }
 
 .rk-alt { color: var(--accent); }
 
-/* Rekindle compatibility */
+/* KlikCore 2 compatibility */
 .hero-compact { padding: 4.5rem 0 3.5rem; }
 
 .badge {
