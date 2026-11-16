@@ -620,3 +620,21 @@ img { max-width: 100%; }
   line-height: 1.4;
   margin-top: 0.5rem;
 }
+
+/* ── KlikCore pages: the launcher's mint (dark text on it, as in the app) ── */
+body.klikcore { --accent: #3ddbad; --accent-dim: #2fb88f; }
+body.klikcore .logo span { color: #8b5cf6; }
+body.klikcore .btn:not(.btn-outline),
+body.klikcore .btn:not(.btn-outline):hover,
+body.klikcore .back-to-top { color: #0b1f18; }
+body.klikcore .hero { background: linear-gradient(135deg, #0c1f1c 0%, #123a33 60%, #0f1117 100%); }
+.kc-hero-shot {
+  display: block;
+  max-width: 920px;
+  margin: 2.5rem auto 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+}
+.kc-hero-shot img { display: block; width: 100%; height: auto; }
