@@ -610,3 +610,13 @@ img { max-width: 100%; }
   .section { padding: 3rem 0; }
   .legal-wrap { padding: 1.5rem; }
 }
+
+/* ── Screenshot gallery with captions (KlikCore) ── */
+.shots { grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+.shots .shot { margin: 0; }
+.shots figcaption {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
